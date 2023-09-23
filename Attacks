@@ -1,0 +1,19 @@
+//Test Suspicious PowerShell Command Line Execution:
+//Run a PowerShell command with an encoded script. This should trigger the detection for suspicious PowerShell command line execution.
+
+powershell.exe -encodedCommand <base64_encoded_script>
+
+//Test Known Malicious PowerShell Command:
+//Execute a known malicious PowerShell command to trigger the detection rule for known malicious PowerShell commands. Be sure to customize the list of malicious commands in your rule.
+
+powershell.exe -Command "Invoke-Mimikatz"
+
+//Test Benign PowerShell Command Execution:
+//Execute a benign PowerShell command to ensure that your detection rules do not generate false positives. For example:
+
+powershell.exe -Command "Get-Process"
+
+//Test PowerShell Command Execution Without Detection:
+//Run a normal PowerShell command that should not trigger any detection rules. For instance:
+
+powershell.exe -Command "Get-Help"
