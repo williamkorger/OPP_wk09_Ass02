@@ -1,0 +1,30 @@
+<group name="windows,">
+  <decoded_as>json</decoded_as>
+  <field name="win.system.providerName">Microsoft-Windows-PowerShell</field>
+  <rule id="100001" level="5">
+    <decoded_as>json</decoded_as>
+    <field name="win.system.eventID">4103</field>
+    <description>Detected suspicious PowerShell command line execution</description>
+    <group>pci_dss</group>
+    <options>no_alert_repeat</options>
+    <options>full_log</options>
+    <decoded_as>json</decoded_as>
+    <field name="win.system.providerName">Microsoft-Windows-PowerShell</field>
+    <description>Detected suspicious PowerShell command line execution</description>
+    <group>pci_dss</group>
+    <options>no_alert_repeat</options>
+    <options>full_log</options>
+    <field name="win.system.eventID">4103</field>
+    <description>Detected suspicious PowerShell command line execution</description>
+    <group>pci_dss</group>
+    <options>no_alert_repeat</options>
+    <options>full_log</options>
+    <field name="win.system.providerName">Microsoft-Windows-PowerShell</field>
+    <description>Detected suspicious PowerShell command line execution</description>
+    <group>pci_dss</group>
+    <options>no_alert_repeat</options>
+    <options>full_log</options>
+    <description>Detected suspicious PowerShell command line execution</description>
+    <field name="win.system.eventID">4103</field>
+  </rule>
+</group>
