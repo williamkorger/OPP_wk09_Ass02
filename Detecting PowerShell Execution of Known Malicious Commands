@@ -1,0 +1,21 @@
+<group name="windows,">
+  <decoded_as>json</decoded_as>
+  <field name="win.system.providerName">Microsoft-Windows-PowerShell</field>
+  <rule id="100002" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="win.system.eventID">4103</field>
+    <description>Detected known malicious PowerShell command</description>
+    <group>pci_dss</group>
+    <options>no_alert_repeat</options>
+    <options>full_log</options>
+    <list>malicious_powershell_commands</list>
+    <field name="win.system.providerName">Microsoft-Windows-PowerShell</field>
+    <description>Detected known malicious PowerShell command</description>
+    <group>pci_dss</group>
+    <options>no_alert_repeat</options>
+    <options>full_log</options>
+    <list>malicious_powershell_commands</list>
+    <description>Detected known malicious PowerShell command</description>
+    <field name="win.system.eventID">4103</field>
+  </rule>
+</group>
